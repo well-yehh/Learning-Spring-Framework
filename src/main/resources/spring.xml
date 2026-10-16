@@ -1,0 +1,19 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="alien" class="Dear.darling.Alien" autowire="byType">
+<!--       <property name="age" value="12"/> &lt;!&ndash; Setter injection &ndash;&gt;-->
+        <!--         <constructor-arg name = "age" value = "14"/>   &lt;!&ndash; Constructor injection &ndash;&gt;-->
+<!--    <property name="laptop" ref="lap"/>-->
+<!--        <property name="com" ref="com"/>-->
+    </bean>
+    <bean id="com" class="Dear.darling.Laptop" primary="true"></bean>
+    <bean id="desk" class="Dear.darling.Desktop"></bean>
+</beans>
+
+
